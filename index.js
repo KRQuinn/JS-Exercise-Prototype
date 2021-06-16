@@ -126,10 +126,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Window Binding - This refers to the scope, Global scope in particular. .this cannot operate on this scope, because it doesn't have context for what this is. It's like saying "I want this!" and not indicating anything, what you want could be anything in the room. 
+    2. Implicit Binding - This happens when you invoke a method with dot notation. What's left of the dot in the invocation is what 'this' is referring to.
+    3. New Binding - Here, .this is going to specifically refer to the instance of an object, such as a constructor.
+    4. Explicit Binding - .this is explicitly defined when we use .call or .apply to override a constructor object  
   */
   
   
