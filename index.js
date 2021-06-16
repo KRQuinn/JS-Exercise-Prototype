@@ -115,13 +115,13 @@ function Airplane(name) {
   this.favoriteToy = favoriteToy;
   }
   
+  Baby.prototype = Object.create(Person.prototype);
+  
   Baby.prototype.play = function(){
     return `Playing with ${this.favoriteToy}`;
   }
 
-  Baby.prototype = Object.create(Person.prototype);
-
-  Baby.play;
+  const baby = new Baby('Poopsie', 1, 'Rattle');
   
   /* 
     TASK 4
